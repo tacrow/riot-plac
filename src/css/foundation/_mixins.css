@@ -1,0 +1,12 @@
+/* background-image base-path */
+@define-mixin bg-img $path {
+  background-image: url("/src/img/"+$path);
+}
+
+/* line-clamp */
+@define-mixin line-clamp $line-num {
+  display: -webkit-box;
+  overflow: hidden;
+  box-orient: vertical;
+  line-clamp: $line-num;
+}

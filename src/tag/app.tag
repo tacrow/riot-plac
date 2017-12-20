@@ -1,25 +1,25 @@
 <app>
   <header></header>
-  <main class="l-contenta">
+  <main class="l-container">
     <div class="l-main">
-      <appContents></appContents>
+      <app-contents></app-contents>
     </div>
     <div class="l-side">
-      <appSide></appSide>
+      <app-side></app-side>
     </div>
   </main>
   <footer></footer>
 
   <script>
     import header from './header';
-    import appContents from './appContents';
-    import appSide from './appSide';
+    import appcontents from './app-contents';
+    import appside from './app-side';
     import footer from './footer';
 
     this.on('mount', () => {
       riot.mount('header', { title: 'riot-app' });
-      riot.mount('appContents');
-      riot.mount('appSide');
+      riot.mount('appcontents');
+      riot.mount('appside');
       riot.mount('footer');
     });
   </script>
